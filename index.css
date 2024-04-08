@@ -1,0 +1,364 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./imagenesYLogos/backGroundPrincipal.jpg);
+    z-index: 0;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    font-size: 35px;
+    color: rgb(64, 239, 70); 
+    display: flex;
+    align-items: center;
+    z-index: 10;  
+    cursor:context-menu;
+}
+.logo:hover{
+    color: rgba(64, 239, 70, 0.632);
+}
+
+.menuNav ul{
+    display: flex;;
+    cursor: pointer;
+    z-index: 10;
+    color: #fff;
+    font-size: 18px;
+    list-style: none;
+    position: relative;
+    top: 10px;
+    gap: 20px;
+    
+}
+.menuNav{
+    display: flex;
+    justify-content:space-around;
+    gap: 20px;
+}
+#menuHamburguesa{
+    height: 35px;
+    width: 35px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+#menuHamburguesa2{
+    cursor: pointer;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    top: 5px; 
+    display: none;
+}
+
+#desplegar li:hover{
+    background-color: rgba(64, 239, 70, 0.334);  
+}
+
+#desplegar{
+    position: relative;
+}
+
+#desplegar ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 70px;
+    background-color: rgb(64, 239, 70);
+    color: #fff;
+    display: none;
+    width: 100%;
+    
+}
+
+#desplegar li{
+    font-size: 20px;
+    position: relative;
+    padding-left: 25px;
+    border-bottom: 0.5px solid #000;
+    
+}
+
+#secundario li:hover {
+    color: #000;
+    
+}
+
+#desplegar:hover ul{
+    display: block;
+}
+.principalProduct{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    position: relative;
+    right: 45px;
+    bottom: 75px;
+    display: none;
+    
+    
+}
+
+
+.carritoDeCompras{
+    display: block;
+    border: 1px solid #000;
+    width: 280px;
+    text-align: center;
+
+}
+#total h2{
+    background-color:rgb(64, 239, 70);
+}
+
+#pedir{
+    cursor: pointer;
+    width: 100%;
+    color: #fff;
+    height: 25px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #00000095;
+    
+}
+
+#total{
+    background-color: rgba(64, 239, 70, 0.692);
+}
+.carritoDeCompras h2{
+    background-color: rgba(2, 2, 2, 0.859);
+    color: #fff;
+}
+.productos{
+    background-color: #ffffff6a;
+    height: auto;
+    width: auto;
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.productos h4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 50px;
+}
+
+.japonesa, .pizza, .hamburguesa, .ensalada, .parrillas, .pastas{
+    height: 250px;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.japonesa{
+    background-image: linear-gradient(transparent 70%, #000), url(./imagenesYLogos/Plato1.jpg);
+    background-size: 350px;
+    background-position: center;
+    border: 1.5px solid #00000059;
+    
+}
+
+.japonesa h3{
+    color: #fff;
+    position: relative;
+    top: 215px;
+    padding-left: 10px;
+}
+
+.pizza{
+    background-image: linear-gradient(transparent 70%, #000), url(./imagenesYLogos/Plato2.jpg);
+    background-size: 360px;
+    background-position: center;
+    border: 1.5px solid #00000059;
+}
+
+.pizza h3{
+    color: #fff;
+    position: relative;
+    top: 215px;
+    padding-left: 10px;
+}
+
+.hamburguesa{
+    background-image: linear-gradient(transparent 70%, #000), url(./imagenesYLogos/Plato3.jpg);
+    background-size: 360px;
+    background-position: center;
+    border: 1.5px solid #00000059
+}
+
+.hamburguesa h3 {
+    color: #fff;
+    position: relative;
+    top: 215px;
+    padding-left: 10px; 
+}
+
+.ensalada{
+    background-image: linear-gradient(transparent 70%, #000), url(./imagenesYLogos/Plato4.jpg);
+    background-size: 370px;
+    background-position: center;
+    border: 1.5px solid #00000059 
+}
+
+.ensalada h3{
+    color: #fff;
+    position: relative;
+    top: 215px;
+    padding-left: 10px; 
+}
+
+.parrillas{
+    background-image: linear-gradient(transparent 70%, #000), url(./imagenesYLogos/Plato5.jpg);
+    background-size: 370px;
+    background-position: center;
+    border: 1.5px solid #00000059
+}
+
+.parrillas h3{
+    color: #fff;
+    position: relative;
+    top: 215px;
+    padding-left: 10px; 
+}
+
+.pastas{
+    background-image: linear-gradient(transparent 70%, #000), url(./imagenesYLogos/Plato6.jpg);
+    background-size: 420px;
+    background-position: center;
+    border: 1.5px solid #00000059
+}
+
+.pastas h3{
+    color: #fff;
+    position: relative;
+    top: 215px;
+    padding-left: 10px
+}
+
+.mause{
+    display: none;
+}
+
+.mause p{
+    display: flex;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+.mause button{
+    text-align: center;
+    position: relative;
+    left: 75px;
+    top: 110px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0.5px solid #0000009c;
+    font-size: 15px;
+    background-color: rgba(64, 239, 70, 0.692);
+    color: #fff;
+}
+
+.japonesa:hover .mause{
+    display: block;
+}
+
+.japonesa:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Plato1.jpg);
+    box-shadow: 5px #00000078;
+}
+
+.mause button:hover{
+    background-color: rgba(64, 239, 70, 0.477); 
+    color: #fff;
+    cursor: pointer;
+}
+
+.pizza:hover .mause{
+    display: block;
+}
+
+.pizza:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Plato2.jpg);
+    box-shadow: 5px #00000078;
+}
+
+.hamburguesa:hover .mause{
+    display: block;
+}
+
+.hamburguesa:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Plato3.jpg);
+    box-shadow: 5px #00000078;
+}
+
+.ensalada:hover .mause{
+    display: block;
+}
+
+.ensalada:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Plato4.jpg);
+    box-shadow: 5px #00000078;
+}
+
+.parrillas:hover .mause{
+    display: block;
+}
+
+.parrillas:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Plato5.jpg);
+    box-shadow: 5px #00000078;
+}
+
+.pastas:hover .mause{
+    display: block;
+}
+
+.pastas:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Plato6.jpg);
+    box-shadow: 5px #00000078;
+}
+
+.precioss{
+    color: #fff;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    top: 196px;
+    left: 80px;
+}
+
+
+
+
+
+
+
