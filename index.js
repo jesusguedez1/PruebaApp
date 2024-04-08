@@ -17,8 +17,9 @@ let total = document.querySelector("#total");
 let precioTotal = 0;
 
 let agregarDatos = (event) =>{
-    let nombreProducto = namee.textContent;
-    let precioProducto = parseFloat(precio.textContent);
+    let parent = event.target.parentElement.parentElement
+    let nombreProducto = parent.querySelector("#nombre").textContent
+    let precioProducto = parseFloat(parent.querySelector("#precio").textContent)
 
     let agregarCompra = document.createElement (`h4`);
     agregarCompra.textContent = nombreProducto + " " + precioProducto;
